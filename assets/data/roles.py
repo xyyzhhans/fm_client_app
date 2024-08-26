@@ -7,7 +7,7 @@ with open('roles.json', 'r') as file:
 for item in data:
     if item.get('RoleCode') in ['bwmd', 'bwms']:
         item['Acc'] = item['Pac'] = 2
-        item['Jum'] = 2
+        item['Jum'] = 5
 
     if item.get('RoleCode') in ['bpdc', 'bpdd', 'bpds', 'cdc', 'cdd', 'cds']:
         item['Acc'] = item['Pac'] = 2
